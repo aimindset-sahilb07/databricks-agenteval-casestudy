@@ -1,0 +1,21 @@
+# Private case-study material (decision log, experiments, article drafts)
+casestudy/
+
+# Secrets and local config
+.env
+.env.*
+*.pem
+.databrickscfg
+
+# Run outputs
+runs/
+mlruns/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local Claude Code settings
+.claude/settings.local.json
