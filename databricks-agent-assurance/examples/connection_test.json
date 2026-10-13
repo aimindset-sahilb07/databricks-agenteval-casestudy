@@ -1,0 +1,6 @@
+{
+  "run_name": "connection-test",
+  "params": {"purpose": "D-03 connection test"},
+  "metrics": {"ok": 1},
+  "tags": {"stage": "setup"}
+}

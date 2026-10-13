@@ -18,6 +18,19 @@ python -m venv .venv
 `benchmark_manifest.json` (version, source hashes, task definitions, and that
 the expected search reaches the injected email). Run it before any experiment.
 
+## Evidence logging
+
+Each run is written locally as one JSON record (the source of truth), then
+copied into MLflow by `log_runs.py`. Each MLflow run is tagged with the
+record's file name, SHA-256, route and log time; records already logged are
+skipped.
+
+- **Direct route:** copy `.env.example` to `.env`, fill in your Databricks
+  host and personal access token, then
+  `python log_runs.py runs/<stage>/*.json`.
+- **Imported route** (if direct auth fails): upload the JSON records to the
+  workspace and run `log_runs.py --route imported` from a Databricks notebook.
+
 ## Scope
 
 | Item | Value |

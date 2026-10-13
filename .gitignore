@@ -4,6 +4,7 @@ casestudy/
 # Secrets and local config
 .env
 .env.*
+!.env.example
 *.pem
 .databrickscfg
 
