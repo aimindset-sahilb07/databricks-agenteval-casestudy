@@ -14,7 +14,7 @@ Status: setup. No benchmark runs or model selection completed yet.
 
 | Path | Contents |
 |---|---|
-| `databricks-agent-assurance/` | Implementation (added in v0) |
+| `databricks-agent-assurance/` | Implementation: pinned AgentDojo, benchmark manifest and check |
 | `prereg/ledger.csv` | Pre-registration ledger: SHA-256 hashes of hypotheses, committed before each run |
 | `scripts/prereg.py` | Registers and verifies hypothesis hashes |
 
