@@ -4,11 +4,13 @@ A bounded case study on prompt-injection controls for tool-using agents, run on
 [AgentDojo](https://github.com/ethz-spylab/agentdojo) with evidence recorded in
 Databricks (MLflow, Delta).
 
-**Question:** which controls reduce prompt-injection risk while preserving
-legitimate task completion, at what cost and latency, and do the benefits
-survive a model swap?
+**Question:** to protect a tool-using agent from prompt injection, should you
+buy safety (an expensive frontier model that resists on its own) or build it
+(a free open-weight model behind a hard block on risky tools)? Compared on
+leaks, correct answers, and cost per correct answer, across three models:
+a budget closed model, a frontier closed model, and a free open-weight model.
 
-Status: setup. No benchmark runs or model selection completed yet.
+Status: setup. Models selected; no benchmark runs yet.
 
 ## Layout
 
